@@ -12,5 +12,6 @@ class Note
     std::string getTitle { return title_; }
     std::string getBody { return body_; }
     //Public Mutators
-
-}
+    void setTitle() { title_ = title; }
+    void setBody() { body_ = note; }
+};

@@ -1,5 +1,4 @@
-//Using the solution for Tuffynotes.cpp Project Milestone 1
-//Jizzelle Cardenas
+//Using the solution provided for Tuffynotes.cpp Project Milestone 1
 
 #include <iostream>
 #include <string>
@@ -13,6 +12,8 @@ int main()
   std::string rem;
   bool display_menu = true;
   std::string array[] = 0;
+  Note title;
+  Note body;
 
   std::cout << "Welcome to TuffyNotes!\n";
 
@@ -22,7 +23,6 @@ int main()
     std::cout << "Choice: ";
     std::cin >> choice;
 
-    std::getline(std::cin, rem);
     if (rem.length() > 0) {
       choice = ' ';
     }
@@ -31,7 +31,9 @@ int main()
     switch (choice) {
       case 'C':
       case 'c':
-        createNote();
+        for (int i = 0; i < 100; i++) {
+          createNote(array);
+        }
         break;
       case 'E':
       case 'e':
