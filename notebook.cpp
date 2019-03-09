@@ -2,7 +2,6 @@
 
 void Note::createNote() //Function Implementation
 {
-  //Putting array in here
   title_ = title;
   body_ = note;
 

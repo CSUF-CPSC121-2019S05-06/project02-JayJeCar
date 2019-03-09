@@ -11,7 +11,7 @@ int main()
   char choice;
   std::string rem;
   bool display_menu = true;
-  std::string array[] = 0;
+  std::string array = {0};
   Note title;
   Note body;
 
@@ -31,8 +31,11 @@ int main()
     switch (choice) {
       case 'C':
       case 'c':
+        createNote(); //Calling the function
         for (int i = 0; i < 100; i++) {
-          createNote(array);
+          if (array[i] > 0) {
+          std::string getTitle(array);
+          std::string getBody(array);
         }
         break;
       case 'E':
@@ -50,9 +53,9 @@ int main()
   std::cout << "\n(temporary debug)\nArray contents:\n";
 
   for (int i = 0; i < 100; i++) {
-    if (!array[i].getTitle().empty() || !array[i].getNote().empty()) {
+    if (!array[i].getTitle().empty() || !array[i].getBody().empty()) {
       std::cout << "Array location [" << i << "]: <" << array[i].getTitle()
-        << "> " << array[i].getNote() << std::endl;
+        << "> " << array[i].getBody() << std::endl;
     }
   }
 
