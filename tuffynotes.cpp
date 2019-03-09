@@ -12,7 +12,7 @@ int main()
   char choice;
   std::string rem;
   bool display_menu = true;
-  std::string Note[99];
+  std::string array[] = 0;
 
   std::cout << "Welcome to TuffyNotes!\n";
 
@@ -48,9 +48,9 @@ int main()
   std::cout << "\n(temporary debug)\nArray contents:\n";
 
   for (int i = 0; i < 100; i++) {
-    if (!array[i].gettitle().empty() || !array[i].getnote().empty()) {
-      std::cout << "Array location [" << i << "]: <" << array[i].gettitle()
-        << "> " << array[i].getnote() << std::endl;
+    if (!array[i].getTitle().empty() || !array[i].getNote().empty()) {
+      std::cout << "Array location [" << i << "]: <" << array[i].getTitle()
+        << "> " << array[i].getNote() << std::endl;
     }
   }
 

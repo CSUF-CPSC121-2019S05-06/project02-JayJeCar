@@ -9,6 +9,8 @@ class Note
   public:
     void createNote();
     //Public Accessors
-    std::string gettitle { return title_; }
-    std::string getnote { return note_; }
+    std::string getTitle { return title_; }
+    std::string getNote { return note_; }
+    //Public Mutators
+    
 }
