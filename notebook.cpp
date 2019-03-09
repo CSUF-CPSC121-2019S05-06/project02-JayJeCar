@@ -4,7 +4,7 @@ void Note::createNote() //Function Implementation
 {
   //Putting array in here
   title_ = title;
-  note_ = note;
+  body_ = note;
 
   std::cout << "Please enter the note's title: ";
   std::getline(std::cin, title);

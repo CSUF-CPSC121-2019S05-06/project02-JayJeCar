@@ -4,13 +4,13 @@
 class Note
 {
   private:
-    std::string title_, note_;
+    std::string title_, body_;
 
   public:
     void createNote();
     //Public Accessors
     std::string getTitle { return title_; }
-    std::string getNote { return note_; }
+    std::string getBody { return body_; }
     //Public Mutators
-    
+
 }
